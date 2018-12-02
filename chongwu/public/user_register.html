@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  a{
+	text-decoration:none;
+  }
+    /* 头部login */
+     #topnav{
+      width:100%;
+      border-bottom:1px solid #ddd;
+     }
+     #nav{
+      width:100%;
+      margin:0 auto;
+      padding:30px;
+      position:relative;
+     }
+     #nav span{
+        position:absolute;
+        right:10px;
+        top:45px;
+        font-size:14px;
+        color:#666;
+     }
+     #nav span a{
+      color:#427fd2;
+      text-decoration:none;
+      
+     }
+ /* 中部 */
+ #content{
+  width:100%;
+ }
+#content-div{
+  width:100%;
+  margin:0 auto;
+  padding-top:55px;
+}
+#content-div-div{
+   width:800px;
+  margin:0 auto;
+
+}
+#content-div-div span{
+  width:96px;
+  text-align:right;
+}
+#content-div-div input{
+  width:415px;
+  height:54px;
+  border:1px solid #ddd;
+  border-radius:5px;
+  font-size:14px;
+  text-indent:16px;
+}
+#phone{
+  margin-bottom:10px;
+}
+#phone1 b{
+  width:37px;
+  display:inline-block;
+}
+#yanzhengma input{
+  width:202px;
+ }
+ #yanzhengma{
+  position:relative;
+ }
+ #yanzhengma b,#uname1 b{    /*b*/
+  width:37px;
+  display:inline-block;
+  }
+#yanzhengmatupian{
+  width:202px;
+  display:inline-block;
+  border:1px solid #ddd;
+  border-radius:5px;
+  height:54px;
+  position:absolute;
+  right:284px;
+  bottom:0px;
+}
+#yanzhengmatupian img{
+  height:52px;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  border:0;
+
+}
+#yanzhengmatupian>a{
+  cursor: pointer;
+  display:inline-block;
+  width:105px;
+  height:52px;
+  position:relative;
+  text-decoration:none;
+  color:#ddd;
+  text-align:center;
+  line-height:52px;
+  padding-top:22px;
+}
+#yanzhengmatupian>a>img{
+  width:14px;
+  height:15px;
+  vertical-align:middle;
+  position:absolute;
+  left:25px;
+  top:18px;
+}
+#yanzhengmatupian>a>span{
+  left:41px;
+  top:0px;
+  position:absolute;
+  width:48px;
+}
+#duanxin{
+  margin-top:10px;
+}
+#duanxin span{
+  padding-left:5px;
+}
+#duanxin input{
+width:255px;
+}
+#duanxin a{
+  display:inline-block;
+  width:149px;
+  height:52px;
+  border:1px solid #33cb98;
+  text-decoration:none;
+  text-align:center;
+  line-height:52px;
+  margin-left:10px;
+  border-radius:5px;
+  color:#666;
+}
+#duanxin a:hover{
+  background:#33cb98;
+  color:white;
+}
+/* 用户名 */
+#uname1{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+#upwd1{
+  margin-bottom:10px;
+}
+#upwd1 b{
+  width:52px;
+  display:inline-block;
+}
+#cpwd1 b{
+  width:20px;
+   display:inline-block;
+}
+#checkbox{
+padding-left:100px;
+margin-top:10px;
+}
+#checkbox input{
+  width:13px;
+  height:13px;
+}
+#get a{
+  width:413px;
+  height:52px;
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  line-height:52px;
+  margin-left:103px;
+  background:#ededed;
+  color:white;
+  margin-top:30px;
+  border-radius:5px;
+  font-size:20px;
+  margin-bottom:50px;
+  cursor: pointer;
+}
+/*底部*/
+#footer{
+  width:100%;
+  border-top:1px solid #ddd;
+}
+#copyright{
+  width:820px;
+  margin:0 auto;
+  padding:70px 0;
+  text-align:center;
+}
+#copyright a,p{
+ text-decoration:none;
+ color:#999;
+ font-size:14px;
+}
+#footer-img{
+  position:relative;
+}
+#footer img{
+width:115px;
+  height:auto;
+display:block;
+background:red;
+position:fixed;
+right:0;
+bottom:0px;
+}
+
+  </style>
+ </head>
+ <body>
+  <!-- 头部 -->
+  <div id="topnav">
+    <div id="nav">
+      <img src="img/cart-logo.png"><img src="img/welcome_07.jpg">
+      <span>已有账号？<a href="user_login.html">登录</a></span>
+    </div>
+  </div>
+  <!--中部-->
+   <div id="content">
+      <div id="content-div">
+        <div id="content-div-div">
+          <div id="phone1"><span><b></b>手机号：</span><input type="text" id="phone" placeholder="请输入手机号"><span id="showphone"></span></div>
+
+          <div id="yanzhengma"><span><b></b>验证码：<input type="text" id="yanzheng" placeholder="请输入图片内容"></span>
+            <div id="yanzhengmatupian"><div id="tupian" style="display:inline-block;"></div><!--<canvas id="canvas" width="91" height="52"></canvas>--><a class="replace"><img src="img/renfren_03.jpg"><span>换一换</span></a></div><span id="showMsg" style="margin-left:222px;"></span>
+          </div>
+
+          <div id="duanxin">
+            <span>短信验证码：</span><input type="text" id="msg" placeholder="验证码"><a href="#"><span>获取验证码</span></a>
+          </div>       
+          
+          <div id="uname1">
+            <span><b></b>用户名：</span><input type="text" id="uname" placeholder="请输入用户名"> 
+            <span id="showUname"></span>
+          </div>
+
+          <div id="upwd1">
+            <span><b></b>密码：</span><input type="password" id="upwd"  placeholder="密码(8-20为，区分大小写)">
+            <span id="showUpwd"></span>
+          </div>
+
+          <div id="cpwd1">
+            <span><b></b>确认密码：</span><input type="password" id="cpwd"  placeholder="确认密码">
+            <span id="showCupwd"></span>
+          </div>
+
+          <div id="checkbox">
+         
+            <input type="checkbox" id="read"><label for="read" style="cursor:pointer;"><span>我已阅读并接受E宠<a href="#">&lt;&lt;用户使用协议&gt;&gt;</a></span></label>
+          </div>
+          
+          <div id="get">
+            <a >立即注册</a>
+          </div>
+        </div>
+      </div>
+   </div>
+   <!-- 底部 -->
+    <div id="footer">
+    <div id="copyright">
+      <a href="#">E宠商城 |</a>
+      <a href="#">知识 |</a>
+      <a href="#">关于我们 |</a>
+      <a href="#">联系我们 </a>
+      <p>渝ICP备10000000号-2   渝ICP备 1000000  增值电信业务经营许可证：xxxxx  Copyright © 2007-2016 xx.com  xxxx科技有限公司</p>
+    </div>
+    <div id="footer-img"><img src="img/6.png"></div>
+  </div>
+  <script src="js/common.js"></script>	
+  <script src="js/jquery-3.2.1.js"></script>	
+  <script src="js/register.js"></script>
+ </body>
+</html>

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+	#top{
+		width:100%;
+	}
+    #center{
+      padding-left:100px;
+      width:100%;
+      position:relative;
+    }
+    #center img{
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+    #center_right{
+      position:absolute;
+      right:20%;
+      top:50px;
+    }
+    #center_right a{
+      text-decoration:none;
+      color:#666;
+      font-size:14px;
+    }
+    #center_right a:hover{
+      color:blue;
+    }
+    /* 中部 */
+    #conter{
+      background:url(img/conter-logo.jpg) no-repeat center;
+      height:628px;
+    }
+    #conter-conter{
+      margin:0 auto;
+      position:relative;
+      height:682px;
+      width:100%;
+    }
+    #login{
+      position:absolute;
+      right:10%;
+      top:112px;
+      width:368px;
+      height:430px;
+      background:white;
+    }
+    .row1 span{
+      line-height:40px;
+      width:49%;
+      text-align:center;
+      height:40px;
+      display:inline-block;
+      font-size:14px;
+     
+    }
+    #login .row1 .col1{
+        border:1px solid #33cb98;
+        border-bottom:0px;
+        background: #FFF;
+    }
+    #login .row1{
+      width:296px;
+      height:68px;
+        padding-top:28px;
+      margin:0 auto;
+        border-bottom:1px solid #33cb98;
+        cursor: pointer;
+    }
+    .row2{
+       width:296px;
+       height:134px;
+       margin:0 auto;
+    }
+    .input-uname,.input-upwd{      /*输入框边框*/
+      border:1px solid #ddd;
+      line-height:45px;
+      margin-top:20px;
+      padding-right:10px;
+      position:relative;
+    }
+    .login-uname,.login-upwd{          /*输入框小图标*/
+      background:url(img/ico.png) no-repeat;
+      width:23px;
+      height:19px;
+      display:inline-block;
+      vertical-align:middle;
+      margin-left:15px;
+      
+    }
+    .login-upwd{
+      background-position:0 -28px;
+    }
+    #login-uname,#login-upwd{      /*input输入框 用户名*/
+      width:244px;
+      height:45px;
+      border:0;
+      position:absolute;
+      left:45px;
+      top:0px;
+      font-size:14px;
+    }
+    /* 忘记密码 */
+    .row3{
+      margin-top:20px;
+      margin:0 auto;
+      width:296px;
+    }
+    .row3>span{
+    font-size:14px;
+    margin-left:2px;
+    }
+    .row3>a{
+      text-decoration:none;
+      float:right;
+      color:#666;
+    }
+    .row3>a:hover{
+      color:blue;
+    }
+/* 登录按钮 */
+.row4{
+   width:296px;
+  height:50px;
+  margin:0 auto;
+  margin-top:20px;
+  margin-bottom:15px;
+}
+input{
+ outline:none;
+  
+}
+.row4>input{
+  text-decoration:none;
+  color:white;
+  width:100%;
+  height:100%;
+  border-radius:5px;
+  background:#33cb98;
+  line-height:50px;
+  border:0;
+  
+  display:inline-block;
+  text-align:center;
+}
+/*合作qq等登录*/
+.row5{
+  width:296px;
+  margin:0 auto;
+  position:relative;
+}
+
+.row5-left span{
+  font-size:14px;
+}
+.row5-left>div>a{
+  background:url(img/ico.png) no-repeat;
+  margin-top:10px;
+  margin-right:10px;
+  width:23px;
+  height:19px;
+  display:inline-block;
+}
+.row5 .a1{
+  background-position:0 -144px;
+}/*微信*/
+.row5 .a2{      /* qq*/
+  background-position:0 -86px;
+} 
+.row5 .a3{
+background-position:0 -170px;
+}
+#zhuce{
+  position:absolute;
+  text-decoration:none;
+  color:#666;
+  right:10px;
+  top:0;  
+}
+#zhuce:hover{
+  color:blue;
+}
+/* 底部 */
+#footer{
+  width:100%;
+}
+#copyright{
+  width:820px;
+  margin:0 auto;
+  padding:70px 0;
+  text-align:center;
+}
+#copyright a,p{
+ text-decoration:none;
+ color:#999;
+ font-size:14px;
+}
+#footer-img{
+  position:relative;
+}
+#footer img{
+width:115px;
+  height:auto;
+display:block;
+background:red;
+position:fixed;
+right:0;
+bottom:0px;
+}
+      #loginDiv2{
+          width: 293px;
+          margin: 18px auto;
+					display:none;
+      }
+
+    #loginDiv2 img{
+        border: 1px solid #bcd9b3;
+        padding: 1px;
+    }
+	.tishi{
+	    margin:0 auto;
+		text-align:center;
+		width:244px;
+		height:45px;
+    line-height:45px;
+    color:red;
+  }
+  .row4>input{
+    cursor: pointer;
+  }
+  </style>
+ </head>
+ <body>
+  <!-- 顶部白色login -->
+ <div id="top">
+   <div id="center"><!-- 左边login -->
+    <a href="#"><img src="img/cart-logo.png"></a>
+   </div> 
+   <!-- 右边两个链接 -->
+   <div id="center_right">
+    <a href="#">品牌特卖</a><b>&nbsp;|</b>
+    <a href="#">试用中心</a>
+   </div>
+ </div>
+ <!-- 中部 -->
+  <div id="conter">
+     <div id="conter-conter">
+       <div id="login">
+          <div class="row1">
+             <span class="col1">普通登录</span>
+              <span >手机动态密码登录</span>
+          </div>
+           <div id="loginDiv1">
+               <!-- 输入框 -->
+               <form method="post" action="user/login">
+                   <div class="row2">
+                       <!-- 用户名 -->
+                       <div class="input-uname">
+                           <span class="login-uname"></span><input type="text" name="uname" placeholder="手机号/邮箱/用户名" id="login-uname">
+                       </div>
+                       <!-- 密码框 -->
+                       <div class="input-upwd">
+                           <span class="login-upwd"></span><input type="password" name="upwd" placeholder="密码" id="login-upwd">
+                       </div>
+                   </div>
+				   <div class="tishi"></div> 
+                   <div class="row3">
+                       <input type="checkbox" id="checkedbox"><label for="checkedbox"><span>自动登录</span></label><a href="#">忘记密码</a>
+                   </div>
+                   <!--登录按钮-->
+                   <div class="row4">
+                       <input type="subimt" value="登录">
+                   </div>
+               </form>
+               <!-- 合作网站登录 -->
+               <div class="row5">
+                   <div class="row5-left">
+                       <span>合作网站登录：</span>
+                       <div><a href="#" class="a1"></a><a href="#" class="a2"></a><a href="#" class="a3"></a></div>
+                   </div>
+                   <a href="user_register.html" id="zhuce">注册账号</a>
+               </div>
+           </div>
+           <div id="loginDiv2">
+               <img src="img/faq-code.png" width="100%" height="100%">
+           </div>
+
+       </div>
+     </div>
+  </div>
+  <!-- 底部 -->
+  <div id="footer">
+    <div id="copyright">
+      <a href="#">E宠商城 |</a>
+      <a href="#">知识 |</a>
+      <a href="#">关于我们 |</a>
+      <a href="#">联系我们 </a>
+      <p>渝ICP备10000000号-2   渝ICP备 1000000  增值电信业务经营许可证：xxxxx  Copyright © 2007-2016 xx.com  xxxx科技有限公司</p>
+    </div>
+    <div id="footer-img"><img src="img/6.png"></div>
+  </div>
+ </body>
+ <script src="js/jquery-3.2.1.js"></script>
+ <script>
+	var row1=document.getElementsByClassName("row1")[0];
+    row1.onclick=function(e){
+        if(e.target.nodeName=="SPAN"){
+            var span = e.target;
+            if(span.className=="col1") {
+                return;
+            }
+            span.className="col1";
+            if(span.nextElementSibling!=null){
+                span.nextElementSibling.className="";
+                document.getElementById("loginDiv2").style.display="none";
+                document.getElementById("loginDiv1").style.display="block";
+            }else{
+                span.previousElementSibling.className="";
+                document.getElementById("loginDiv1").style.display="none";
+                document.getElementById("loginDiv2").style.display="block";
+            }
+        }
+    }
+
+  $(function(){
+    $(".row4").children().click(function(){
+        var uname=$(".input-uname").children().last().val();
+        var upwd=$(".input-upwd").children().last().val();
+        (async function(){
+          var res=await $.ajax({
+            url:"http://127.0.0.1:3000/user/signin",
+            type:"post",
+            data:{uname,upwd},
+            dataType:"json",
+          })
+          if(res.ok==0){
+            var $div=$(".tishi");
+            $div.html(res.msg);
+          }else{
+          if(location.search.startsWith("?back=")){//字符串是否已指定的字符串开头()内放置开头的内容
+              var url=location.search.slice(6);
+          }else{
+            var url="index.html";
+          }
+          location.href=url;
+        }
+      })()
+
+    })
+    //回车
+   
+    $("#login-uname, #login-upwd").keyup(function(e){
+      e.preventDefault();      
+    if(e.keyCode==13){
+      $(".row4").children().click();
+  }
+})
+
+  })
+
+    
+ </script>
+</html>
